@@ -51,8 +51,7 @@ public class Main {
                 //put category and value into hashmap
                 //value is the rating
                 //use .put
-                // PLAN CODE
-                //
+                //PLAN CODE
                 //for (Google entry: store) {
                 //  .add(entry) //call back function in google
                 //  .put(category, value)
@@ -62,7 +61,8 @@ public class Main {
             //printing
             //for (String cat: classified.keySet()) {
             //  Google entries = classified.get(cat)
-            //    System.out.printf();
+            //    System.out.printf("%s: average: %f , ^%s:%f, V%s:%f\n", c, 
+            //entries.averageRating(), .getHighestRApp(), .getHighestRating(), .getLowestRApp());
             //}
 
 
