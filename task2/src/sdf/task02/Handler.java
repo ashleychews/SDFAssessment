@@ -17,13 +17,13 @@ public class Handler {
 
     
     while (true) {
-        Socket client = server.accept();
-        System.out.println("New client connection");
+        // Socket client = server.accept();
+        // System.out.println("New client connection");
 
-         Handler handler = new Handler(client);
-         handler.start();
+        //  Handler handler = new Handler(client);
+        //  handler.start();
     
-
+    }
 
     
 }
