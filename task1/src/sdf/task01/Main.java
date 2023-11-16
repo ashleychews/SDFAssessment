@@ -23,13 +23,13 @@ public class Main {
             System.err.println("Missing google play store csv");
             System.exit(1);
         }
+        //create hashmap to store key and values
+        Map<String, List<Google>> classified = new HashMap<>();
 
         try (FileReader fr = new FileReader(args[0])) {
             BufferedReader br = new BufferedReader(fr);
             //for counting lines
             //long countLines = fr.read().count();
-            //create hashmap to store key and values
-            Map<String, List<Google>> classified = new HashMap<>();
             //br.readLine() -> reads line by line
             br.lines()
                 .skip(1) //skip header
@@ -60,12 +60,12 @@ public class Main {
 
             //printing
             for (String cat: classified.keySet()) {
-                Google entries = classified.get(cat)
+                List<Google> entries = classified.get(cat);
                 System.out.printf("%s,  %f , %s:%f, V%s:%f\n", 
-                entries.averageRating(),
-                entries.getHighestRApp(), 
-                entries.getHighestRating(), 
-                entries.getLowestRApp());
+                    entries.getavrRating(),
+                    entries.getHighestRApp(), 
+                    entries.getHighestRating(), 
+                    entries.getLowestRApp());
                 System.out.println("Total lines count" + lineCount);
             }
 

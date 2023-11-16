@@ -25,7 +25,12 @@ public class Session {
         OutputStreamWriter ows = new OutputStreamWriter(os);
         BufferedWriter bw = new BufferedWriter(ows);
 
-        
+        boolean stop = false;
+        while (!stop) {
+
+            
+        }
+
 
     }
 

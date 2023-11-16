@@ -12,7 +12,6 @@ public class Main {
 
 
         //connect to server
-
         if (args.length == 0) {
             int port = 3000;
             String host = "localhost";
@@ -38,8 +37,6 @@ public class Main {
             System.out.printf("SERVER RESPONSE: %s\n", line);
         }
     
-      
-
 
         // Close the stream
         bw.flush();

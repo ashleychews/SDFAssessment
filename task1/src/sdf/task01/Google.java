@@ -70,15 +70,15 @@ public class Google {
     }
 
     //function to add ratings into the linkedlist
-    public void addRatings(double ratings){
-        ratings.add(ratings());
-        if (ratings() < getLowestRating()) {
-            setLowestRapp(lowestRating);
-        } else if (ratings() > getHighestRating()) {
-            setHighestRating(highestRating);
-            setHighestRapp(ratings.getApp());
-        }
-    }
+    // public void addRatings(double ratings){
+    //     ratings.add(ratings());
+    //     if (ratings() < getLowestRating()) {
+    //         setLowestRapp(lowestRating);
+    //     } else if (ratings() > getHighestRating()) {
+    //         setHighestRating(highestRating);
+    //         setHighestRapp(ratings.getApp());
+    //     }
+    // }
     
 
     //get average
@@ -89,7 +89,6 @@ public class Google {
             sum +=1;
         }
         return sum/count;
-
 
     }
 
