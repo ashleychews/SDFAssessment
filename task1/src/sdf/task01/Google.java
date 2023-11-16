@@ -62,8 +62,8 @@ public class Google {
     }
 
     //function to add ratings into the linkedlist
-    //public void addRatings(){
-    //  
+    //public void addRatings(ratings){
+    //  ratings.add();
     //}
     //
 

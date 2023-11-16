@@ -62,8 +62,8 @@ public class Main {
 
             //printing
             //for (String cat: classified.keySet()) {
-            //  
-            //    System.out.printf("%s: %s\n", );
+            //  Google get = 
+            //    System.out.printf("%s: average: %s\n",  );
             //}
 
 
