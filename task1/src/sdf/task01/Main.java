@@ -61,11 +61,11 @@ public class Main {
             //printing
             for (String cat: classified.keySet()) {
                 List<Google> entries = classified.get(cat);
-                System.out.printf("%s,  %f , %s:%f, V%s:%f\n", 
-                    entries.getavrRating(),
-                    entries.getHighestRApp(), 
-                    entries.getHighestRating(), 
-                    entries.getLowestRApp());
+                System.out.println( 
+                    "Average ratings" + entries.getavrRating(),
+                    "Highest Rated App" + entries.getHighestRApp(), 
+                    "Highest Rating" + entries.getHighestRating(), 
+                    "Lowest Rated App" + entries.getLowestRApp());
                 System.out.println("Total lines count" + lineCount);
             }
 
