@@ -45,25 +45,24 @@ public class Main {
 
                 //group by categories
                 .collect(Collector.groupingBy(cat -> cat.category()));
+            }
                 
                 //idea is for each category, 
                 //put category and value into hashmap
                 //value is the rating
                 //use .put
                 // PLAN CODE
-                //.forEach()
-                //for (Google g: store) {
-
+                //
+                //for (Google entry: store) {
+                //  .add(entry) //call back function in google
+                //  .put(category, value)
                 //}
-
-                }
-
 
 
             //printing
             //for (String cat: classified.keySet()) {
-            //  Google get = 
-            //    System.out.printf("%s: average: %s\n",  );
+            //  Google entries = classified.get(cat)
+            //    System.out.printf();
             //}
 
 
