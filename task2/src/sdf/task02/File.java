@@ -14,7 +14,7 @@ public class File {
     List<String> price = new List<String>();
 
 
-    list.sort(Comparator)
+    list.sort(Comparator);
 
 
     
