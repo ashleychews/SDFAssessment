@@ -15,7 +15,7 @@ public class Google {
     private String lowestRapp;
 
 
-    public Google(String app, String category) {
+    public Google(String app, String category, double ratings) {
         this.app = app;
         this.category =category;
     }
@@ -66,10 +66,6 @@ public class Google {
     //  
     //}
     //
-
-
-
-
 
     //get average
     public double avrRating(List <Double> ratings) {

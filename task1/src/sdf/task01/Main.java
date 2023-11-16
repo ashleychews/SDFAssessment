@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.stream.Collector;
 
 public class Main {
@@ -23,11 +24,10 @@ public class Main {
             System.exit(1);
         }
 
-        //for counting lines
-        int countline = 0; 
         try (FileReader fr = new FileReader(args[0])) {
             BufferedReader br = new BufferedReader(fr);
-
+            //for counting lines
+            //long countLines = fr.read().count();
             //create hashmap to store key and values
             Map<String, List<Google>> classified = new HashMap<>();
             //br.readLine() -> reads line by line
@@ -44,15 +44,16 @@ public class Main {
                 ,Double.parseDouble(columns[COL_RATING])))
 
                 //group by categories
-                .collect(Collector.groupingBy(cat -> cat.category());
+                .collect(Collector.groupingBy(cat -> cat.category()));
                 
                 //idea is for each category, 
                 //put category and value into hashmap
                 //value is the rating
                 //use .put
                 // PLAN CODE
+                //.forEach()
                 //for (Google g: store) {
-                    
+
                 //}
 
                 }
@@ -61,9 +62,8 @@ public class Main {
 
             //printing
             //for (String cat: classified.keySet()) {
+            //  
             //    System.out.printf("%s: %s\n", );
-
-
             //}
 
 
