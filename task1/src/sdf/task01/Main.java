@@ -59,11 +59,15 @@ public class Main {
 
 
             //printing
-            //for (String cat: classified.keySet()) {
-            //  Google entries = classified.get(cat)
-            //    System.out.printf("%s: average: %f , ^%s:%f, V%s:%f\n", c, 
-            //entries.averageRating(), .getHighestRApp(), .getHighestRating(), .getLowestRApp());
-            //}
+            for (String cat: classified.keySet()) {
+                Google entries = classified.get(cat)
+                System.out.printf("%s,  %f , %s:%f, V%s:%f\n", 
+                entries.averageRating(),
+                entries.getHighestRApp(), 
+                entries.getHighestRating(), 
+                entries.getLowestRApp());
+                System.out.println("Total lines count" + lineCount);
+            }
 
 
 

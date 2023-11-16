@@ -41,8 +41,16 @@ public class Google {
         return highestRating;
     }
 
+    public void setHighestRating(double highestRating) {
+        this.highestRating = highestRating;
+    }
+
     public double getLowestRating() {
         return lowestRating;
+    }
+
+    public void setLowestRating(double lowestRating) {
+        this.lowestRating = lowestRating;
     }
 
     public String getHighestRapp() {
@@ -62,10 +70,16 @@ public class Google {
     }
 
     //function to add ratings into the linkedlist
-    //public void addRatings(ratings){
-    //  ratings.add();
-    //}
-    //
+    public void addRatings(double ratings){
+        ratings.add(ratings());
+        if (ratings() < getLowestRating()) {
+            setLowestRapp(lowestRating);
+        } else if (ratings() > getHighestRating()) {
+            setHighestRating(highestRating);
+            setHighestRapp(ratings.getApp());
+        }
+    }
+    
 
     //get average
     public double avrRating(List <Double> ratings) {

@@ -11,6 +11,11 @@ public class File {
     Map<String, List<Products>> prod = new HashMap<>();
     //
 
+    List<String> price = new List<String>();
+
+
+    list.sort(Comparator)
+
 
     
 }
